@@ -1,0 +1,16 @@
+{
+    "name": "voice-website",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://khellaf-imad-eddine.github.io/voice-website",
+    "dependencies": {
+        "gh-pages": "^3.1.0"
+    }
+}
