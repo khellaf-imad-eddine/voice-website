@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my-caption</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class=".body">
+    <!--header start here-->
+    <header>
+        <!--nav bar-->
+        <nav class="nav">
+            <div class="logo">MAD DEVELOPER <br> I AM CREATIVE</div>
+
+            <ul>
+                <li>
+                    <h3 class="content"></h3>
+                </li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#sectionOne">NATURE</a></li>
+                <li><a href="#sectionTwo">ANIMAL</a></li>
+                <li><a href="#sectionThree">CAR</a></li>
+                <li><a href="#sectionFour">CITIES</a></li>
+                <li>
+                    <button class="talk"><i class="fa fa-microphone"></i></button>
+                </li>
+                <li>
+                    <i class="fas fa-webcam"></i>
+                </li>
+
+                <li><button class="mode" onclick="myFunction()">
+                    <i class="fa fa-moon" id="moon"></i>
+                </button></li>
+            </ul>
+        </nav>
+        <h1 class="today"></h1>
+        <h2 class="greeting"></h2>
+        <h3 class="time"></h3>
+    </header>
+    <div class="wrapper wrapper-color">
+        <section id="sectionOne">
+
+            <h1>Nature Gallery</h1>
+            <div class="arrow-left"><i class="fas fa-caret-square-left"></i></div>
+            <div class="arrow-right"><i class="fas fa-caret-square-right"></i></div>
+
+            <div id="slider">
+                <div class="slide slide1">
+                    <div class="img-gallery">
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature01.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature02.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature03.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature04.jpg">
+                        </div>
+                        <!-- ... -->
+                    </div>
+                </div>
+                <!---->
+                <div class="slide slide2">
+                    <div class="img-gallery">
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature05.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature06.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature07.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/nature/nature08.jpg">
+                        </div>
+                        <!-- ... -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="sectionTwo">
+            <h1>Animals Gallery</h1>
+
+            <div class="voice-last">
+                last
+                <p class="talk-now">talk</p>
+            </div>
+            <div class="voice-next">
+                next
+                <p class="talk-now">talk</p>
+            </div>
+
+
+            <div id="slider-voice">
+                <div class="slide-voice slide-voice1">
+
+                    <div class="img-gallery">
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal01.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal02.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal03.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal04.jpg">
+                        </div>
+                        <!-- ... -->
+                    </div>
+                </div>
+                <!-- ... -->
+                <div class="slide-voice slide-voice2">
+                    <div class="img-gallery">
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal05.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal06.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal07.jpg">
+                        </div>
+                        <!-- ... -->
+
+                        <!-- ... -->
+                        <div class="img-holder">
+                            <img class="my__img" src="images/animals/animal08.jpg">
+                        </div>
+                        <!-- ... -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="sectionThree">
+            <h1>Cars Gallery</h1>
+
+            <div class="img-gallery">
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cars/car01.jpg">
+                </div>
+                <!-- ... -->
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cars/car02.jpg">
+                </div>
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cars/car03.jpg">
+                </div>
+                <!-- ... -->
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cars/car04.jpg">
+                </div>
+                <!-- ... -->
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cars/car05.jpg">
+                </div>
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cars/car06.jpg">
+                </div>
+                <!-- ... -->
+            </div>
+        </section>
+        <hr>
+        <section id="sectionFour">
+            <h1>Cities Gallery</h1>
+
+            <div class="img-gallery">
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cities/city01.jpg">
+                </div>
+                <!-- ... -->
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cities/city02.jpg">
+                </div>
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cities/city03.jpg">
+                </div>
+                <!-- ... -->
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cities/city04.jpg">
+                </div>
+                <!-- ... -->
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cities/city05.jpg">
+                </div>
+                <!-- ... -->
+                <div class="img-holder">
+                    <img class="my__img" src="images/cities/city06.jpg">
+                </div>
+                <!-- ... -->
+            </div>
+        </section>
+        <hr>
+        <footer id="footer">
+            <h3>contact</h3>
+            contact me please
+            <h3>imadlastmomentlmk@gmail.com</h3>
+        </footer>
+    </div>
+    <!--header end here-->
+
+    <div class="instruction">
+    </div>
+    <!--changeable header-->
+    <script src="header.js"></script>
+
+    <!--sider show-->
+    <script src="slider.js"></script>
+
+    <!--sider show with voice-->
+    <script src="silder-with voice.js"></script>
+
+    <!--talk js-->
+    <script src="talk.js"></script>
+
+    <!--instruction div-->
+    <script>
+        setTimeout(function() {
+            document.querySelector(".instruction").style.display = "none";
+        }, 1000);
+    </script>
+
+    <!--dark/light MODE-->
+    <script>
+        function myFunction() {
+            let wrapper = document.querySelector(".wrapper-color");
+            let nav = document.querySelector(".nav");
+            wrapper.classList.toggle("dark-mode");
+            nav.classList.toggle("dark-nav");
+        }
+    </script>
+</body>
+
+</html>

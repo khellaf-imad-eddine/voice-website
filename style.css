@@ -1,0 +1,295 @@
+/* universal */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #38016b;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/**/
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    color: #4B0082;
+    text-decoration: none;
+}
+
+
+/*utilities*/
+
+
+/*body*/
+
+body {
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/*header*/
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /*changeable background according to time of the day*/
+    /* javascript header.js */
+}
+
+footer {
+    width: 100%;
+    padding-top: 35px;
+}
+
+footer h3 {
+    margin: 25px;
+}
+
+
+/*changeable day*/
+
+.today {
+    margin: 25vh 0 3vh 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 7vw;
+    color: #eeeded4d;
+}
+
+
+/*changeable Greeting*/
+
+.greeting {
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+    letter-spacing: 2px;
+}
+
+
+/*changeable date*/
+
+.time {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/*nav bar*/
+
+nav {
+    height: 50px;
+    width: 100%;
+    padding: 0 2vw;
+    background: rgba(355, 255, 255, .8);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5;
+}
+
+nav .logo {
+    color: #000;
+    line-height: 17px;
+    padding-top: 9.5px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1vh 1vw;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+nav i[class^="fa"] {
+    color: #3A5F0B;
+    padding: 12px;
+    cursor: pointer;
+}
+
+nav i[class^="fa"]:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+#moon {
+    color: #000;
+    font-size: 15px;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 22px;
+}
+
+nav .mode {
+    border-radius: 50%;
+    background: #ccc;
+}
+
+
+/**********section****************/
+
+section {
+    width: 100%;
+    padding: 20px 0;
+    margin: 25px 0;
+    position: relative;
+}
+
+
+/**********instruction****************/
+
+.instruction {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+/**Dark Mode***/
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 20vh 5vw 5vh 5vh;
+}
+
+.wrapper-color {
+    background: #ddd;
+    color: #ff0000d5;
+}
+
+.dark-mode {
+    background: #222;
+    color: #fa4e4e;
+}
+
+.dark-nav {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+
+/**voice content***/
+
+.content {
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: rgb(4, 4, 99);
+    text-transform: uppercase;
+    padding: 10px 100px 0 70px;
+}
+
+
+/*******image galleries******/
+
+.img-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-holder {
+    width: 450px;
+    height: 260px;
+    margin: 25px;
+}
+
+.my__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/**************slider btn******************/
+
+.arrow-left,
+.arrow-right,
+.voice-last,
+.voice-next {
+    font-size: 32px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-left,
+.voice-last {
+    left: 5px;
+}
+
+
+/**/
+
+.arrow-right,
+.voice-next {
+    right: 5px;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    transform: translateY(-50%) scale(1.1);
+    transition: .4s;
+}
+
+.arrow-right:active,
+.arrow-left:active {
+    transform: translateY(-50%) scale(.9);
+}
+
+
+/**************slider btn******************/
+
+.talk-now {
+    color: green;
+    letter-spacing: 2px;
+    margin-top: -75px;
+    opacity: 0;
+}
+
+.voice-last:hover .talk-now,
+.voice-next:hover .talk-now {
+    opacity: 1;
+    transition: .3s;
+}
+
+
+/**************slider btn******************/
